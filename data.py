@@ -39,10 +39,13 @@ def import_data(DATADIR):
     X = np.array(X)
 
     x_train = np.squeeze(X).astype('float32')
-    x_train /= 255
+    #x_train /= 255
     y_train = np.array(y).astype('float32')
 
     return x_train, y_train
 
 path  = 'D:/OneDrive - ump.edu.my/Atik_Home/Writing/Encoder/CWT/'
 X, y = import_data(path)
+
+
+
