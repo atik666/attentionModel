@@ -1,14 +1,14 @@
 clear;clc;
 
 fs= 12000; %Sampling frequency
-file = {'3Norm', '3BF07', '3IR07', '3OR07'}; 
+file = {'2Norm', '2BF07', '2IR07', '2OR07'}; 
 for j = 1 : length(file)
-    data = load(sprintf('D:/OneDrive - ump.edu.my/Atik_Home/Writing/Encoder/Load data/3/%s.mat', file{1,j}));
+    data = load(sprintf('D:/OneDrive - ump.edu.my/Atik_Home/Writing/Encoder/Load data/2/%s.mat', file{1,j}));
 
     data = struct2cell(data);
-    data = cell2mat(data(1,1));
+    data = cell2mat(data(4,1));
 
-    dir = sprintf('D:/OneDrive - ump.edu.my/Atik_Home/Writing/Encoder/Load data/3/%s',file{1,j});
+    dir = sprintf('D:/OneDrive - ump.edu.my/Atik_Home/Writing/Encoder/Load data/2/%s',file{1,j});
 
     k = 1;
     for i = 1 : 50  
